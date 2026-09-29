@@ -1,0 +1,360 @@
+/* ==========================================================
+   MINDSCOPE GLOBAL STYLES & TYPOGRAPHY
+   ========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #f1f5f9;
+}
+
+/* Base App Background */
+.stApp {
+    background: radial-gradient(circle at top left, #1e1b4b 0%, #0f172a 40%, #020617 100%);
+    background-attachment: fixed;
+}
+
+/* ==========================================================
+   SIDEBAR NAVIGATION
+   ========================================================== */
+
+.sidebar-brand {
+    text-align: center;
+    padding: 16px 8px;
+}
+
+.brand-icon {
+    font-size: 2.2rem;
+    margin-bottom: 6px;
+}
+
+.brand-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #a5b4fc, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.5px;
+}
+
+.brand-subtitle {
+    font-size: 0.78rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 4px;
+}
+
+.nav-title {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #64748b;
+    letter-spacing: 1.2px;
+    margin-bottom: 8px;
+    padding-left: 4px;
+}
+
+.sidebar-footer {
+    font-size: 0.75rem;
+    color: #64748b;
+    text-align: center;
+    line-height: 1.4;
+    padding: 12px 0;
+}
+
+/* ==========================================================
+   HERO & SECTION HEADINGS
+   ========================================================== */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 24px;
+    padding: 36px 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.hero-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #818cf8;
+    background: rgba(129, 140, 248, 0.12);
+    border: 1px solid rgba(129, 140, 248, 0.3);
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff;
+    margin: 0 0 12px 0;
+}
+
+.hero p {
+    color: #94a3b8;
+    font-size: 1rem;
+    max-width: 580px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.hero-emoji {
+    font-size: 4rem;
+    opacity: 0.9;
+}
+
+.section-heading {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #f8fafc;
+    margin: 28px 0 6px 0;
+}
+
+.section-subtitle {
+    font-size: 0.88rem;
+    color: #94a3b8;
+    margin-bottom: 18px;
+}
+
+.page-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.page-description {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    margin-bottom: 24px;
+}
+
+/* ==========================================================
+   CARDS & GRID CONTAINERS
+   ========================================================== */
+
+.feature-card, .pipeline-card, .result-card, .emotion-card, .theme-card, .studio-info {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 20px;
+    transition: all 0.25s ease;
+}
+
+.feature-card:hover, .pipeline-card:hover, .result-card:hover {
+    border-color: rgba(129, 140, 248, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.feature-icon, .pipeline-icon, .studio-icon {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.feature-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f1f5f9;
+    margin: 0 0 6px 0;
+}
+
+.feature-card p {
+    font-size: 0.82rem;
+    color: #94a3b8;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Result Snapshot Cards */
+.result-card {
+    text-align: center;
+    padding: 16px;
+}
+
+.result-icon {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+}
+
+.result-label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: #64748b;
+    letter-spacing: 0.8px;
+    margin-bottom: 4px;
+}
+
+.result-value {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #38bdf8;
+}
+
+/* Keyword Badges */
+.keyword-tag {
+    display: inline-block;
+    background: rgba(56, 189, 248, 0.1);
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin: 4px 6px 4px 0;
+    transition: background 0.2s ease;
+}
+
+.keyword-tag:hover {
+    background: rgba(56, 189, 248, 0.2);
+}
+
+/* Pipeline Flow Cards */
+.pipeline-card {
+    position: relative;
+    padding: 16px;
+}
+
+.pipeline-number {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #475569;
+}
+
+.pipeline-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #f1f5f9;
+}
+
+.pipeline-description {
+    font-size: 0.78rem;
+    color: #94a3b8;
+}
+
+/* ==========================================================
+   AI MOOD BOOSTER HUB CUSTOMIZATION
+   ========================================================== */
+
+/* Inner Affirmation Container */
+.mood-affirmation-box {
+    color: #f8fafc !important;
+    font-size: 0.95rem !important;
+    font-style: italic !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+    padding: 14px 18px !important;
+    border-radius: 12px !important;
+    border: 1px dashed rgba(255, 255, 255, 0.15) !important;
+    margin-top: 14px !important;
+    margin-bottom: 0 !important;
+    line-height: 1.5 !important;
+}
+
+/* Streamlit Checkbox Customization inside Mood Booster */
+div[data-baseweb="checkbox"] {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 8px;
+    transition: all 0.2s ease;
+}
+
+div[data-baseweb="checkbox"]:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Checkbox Text */
+div[data-baseweb="checkbox"] span {
+    font-size: 0.88rem !important;
+    color: #cbd5e1 !important;
+}
+
+/* ==========================================================
+   FORM CONTROLS & STREAMLIT OVERRIDES
+   ========================================================== */
+
+/* Text Area */
+.stTextArea textarea {
+    background: rgba(15, 23, 42, 0.7) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 14px !important;
+    color: #f8fafc !important;
+    font-size: 0.95rem !important;
+    padding: 14px !important;
+}
+
+.stTextArea textarea:focus {
+    border-color: #818cf8 !important;
+    box-shadow: 0 0 0 2px rgba(129, 140, 248, 0.2) !important;
+}
+
+/* Buttons */
+.stButton button {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed) !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 10px 20px !important;
+    transition: all 0.2s ease !important;
+    box-shadow: 0 4px 14px rgba(79, 70, 229, 0.3) !important;
+}
+
+.stButton button:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.45) !important;
+}
+
+/* Metric Widgets */
+div[data-testid="stMetricValue"] {
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 700 !important;
+    color: #38bdf8 !important;
+}
+
+/* Dataframe Styling */
+div[data-testid="stDataFrame"] {
+    background: rgba(15, 23, 42, 0.6) !important;
+    border-radius: 14px !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    overflow: hidden !important;
+}
+
+/* Toast Notification Override */
+div[data-testid="stToast"] {
+    background: #0f172a !important;
+    border: 1px solid #38bdf8 !important;
+    color: #f8fafc !important;
+    border-radius: 12px !important;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #64748b;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 24px 0 12px 0;
+    margin-top: 40px;
+}
